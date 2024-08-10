@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 os.environ["OPENAI_API_KEY"]=os.getenv("OPENAI_API_KEY")
 ## Enables the tracing for Langsmith globally.
-## Langchain automatically traces all interactions without needing to decorate individual functions
+## Langchain automatically traces all interactions without needing to decorate individual functions by integrating LangSmith
 os.environ["LANGCHAIN_TRACING_V2"]="true"
 
 ## API key for Langchain to use the Langsmith service
